@@ -19,9 +19,9 @@ const StyledButton: React.FC<StyledButtonProps> = ({children, onClick}) => {
         alignItems: "center",     // Corrigido para alignItems
         justifyContent: "center",
         gap: "10px",
-        '&:hover': {
-            backgroundColor: theme.palette.secondary.light // Corrigido para backgroundColor
-        }
+//        '&:hover': {
+//            backgroundColor: theme.palette.secondary.light // Corrigido para backgroundColor
+//        }
     }));
 
     return (
