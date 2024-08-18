@@ -41,56 +41,32 @@ const Hero = () => {
                             </Box>
                         </Box>
                     </Grid>
-                    <Grid item xs={12} md={7}>
-                        <Typography color="primary.contrastText" variant="h1" textAlign="center" pb={2} >
+                    <Grid item xs = {12} md = {7}>
+                        <Typography color = "primary.contrastText" variant = "h1" textAlign = "center" pb = {2} >
                             Thomas Mayer Garcez
                         </Typography>
-                        <Typography color="primary.contrastText" variant="h4" textAlign="center">
+                        <Typography color = "primary.contrastText" variant = "h4" textAlign = "center">
                             &lt;/Software Developer&gt;
                         </Typography>
-                        <Grid
-                            container
-                            display="flex"
-                            justifyContent="center"
-                            spacing={3}
-                            pt={3}
-                        >
-                            <Grid
-                                item
-                                xs={12}
-                                md={1}
-                                display="flex"
-                                justifyContent="center"
-                            >
-                                <StyledButton onClick={() => console.log("GitHub")}>
-                                    <GitHubIcon sx={{ fontSize: 50 }} />
+                        <Grid container display = "flex" justifyContent = "center" spacing = {3} pt={3}>
+                            <Grid item xs = {12} md = {1} display = "flex" justifyContent = "center">
+                                <StyledButton onClick = {() => console.log("GitHub")}>
+                                    <GitHubIcon sx = {{ fontSize: 50 }} />
                                 </StyledButton>
                             </Grid>
-                            <Grid
-                                item
-                                xs={12}
-                                md={1}
-                                display="flex"
-                                justifyContent="center"
-                            >
-                                <StyledButton onClick={() => console.log("LinkedIn")}>
-                                    <LinkedInIcon sx={{ fontSize: 50 }} />
+                            <Grid item xs = {12} md = {1} display = "flex"justifyContent = "center">
+                                <StyledButton onClick = {() => console.log("LinkedIn")}>
+                                    <LinkedInIcon sx = {{ fontSize: 50 }} />
                                 </StyledButton>
                             </Grid>
-                            <Grid
-                                item
-                                xs={12}
-                                md={1}
-                                display="flex"
-                                justifyContent="center"
-                            >
+                            <Grid item xs = {12} md = {1} display = "flex" justifyContent = "center">
                                 <StyledButton onClick={() => console.log("Email")}>
                                     <MailOutlineIcon sx={{ fontSize: 50 }} />
                                 </StyledButton>
                             </Grid>
-                            <Grid item xs={12} md={1} display="flex" justifyContent="center">
-                                <StyledButton onClick={() => console.log("WhatsApp")}>
-                                    <WhatsAppIcon sx={{ fontSize: 50 }} />
+                            <Grid item xs = {12} md = {1} display = "flex" justifyContent = "center">
+                                <StyledButton onClick = {() => console.log("WhatsApp")}>
+                                    <WhatsAppIcon sx = {{ fontSize: 50 }} />
                                 </StyledButton>
                             </Grid>
                         </Grid>
