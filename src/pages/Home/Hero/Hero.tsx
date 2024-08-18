@@ -32,7 +32,7 @@ const Hero = () => {
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={5}>
                         <Box position = "relative">
-                            <Box position = "absolute" width = {"150%"}  height = {"150%"} top = {-200} right = {0}  >
+                            <Box position = "absolute" width = {"150%"}  height = {"150%"} top = {-100} right = {-20}  >
                                 <AnimatedBackground></AnimatedBackground>
                             </Box>
                             <Box position = "relative" textAlign = "center">
@@ -41,11 +41,11 @@ const Hero = () => {
                         </Box>
                     </Grid>
                     <Grid item xs={12} md={7}>
-                        <Typography color="primary.contrastText" variant="h1" textAlign="center" pb = {2}>
-                            Thomas Mayer Garcez
+                        <Typography color="primary.contrastText" variant="h3" textAlign="center" pb = {2}>
+                        Thomas Mayer Garcez
                         </Typography>
-                        <Typography color="primary.contrastText" variant="h2" textAlign="center">
-                            I'm a Software Engineer
+                        <Typography color="primary.contrastText" variant="h4" textAlign="center">
+                        &lt;/Software Developer&gt;
                         </Typography>
                         <Grid container display="flex" justifyContent="center" spacing = {3}  pt = {3}>
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
@@ -58,6 +58,14 @@ const Hero = () => {
                             </Grid>
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
                                 <StyledButton onClick = {() => console.log("contact-me") }>
+                                    <MailOutlineIcon />
+                                    <Typography>
+                                        Contact-me
+                                    </Typography>
+                                </StyledButton>
+                            </Grid>
+                            <Grid item xs = {12}>
+                            <StyledButton onClick = {() => console.log("contact-me") }>
                                     <MailOutlineIcon />
                                     <Typography>
                                         Contact-me
