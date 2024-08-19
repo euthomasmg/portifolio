@@ -22,9 +22,9 @@ const Hero = () => {
     }));
 
     const StyledImage = styled("img")(({ theme }) => ({
-        width: "70%",
+        width: "60%",
         borderRadius: "50%",
-        border: `1px solid ${theme.palette.primary.contrastText}`,
+        border: `3px solid ${theme.palette.primary.contrastText}`,
     }));
 
     return (
@@ -33,40 +33,40 @@ const Hero = () => {
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={5}>
                         <Box position="relative">
-                            <Box position="absolute" width={"150%"} height={"150%"} top={-100} right={-20}>
+                            <Box position="absolute" width = {"150%"} height = {"115%"} top = {-170} right = {-90}>
                                 <AnimatedBackground />
                             </Box>
                             <Box position="relative" textAlign="center">
-                                <StyledImage src={Avatar} />
+                                <StyledImage src = {Avatar} />
                             </Box>
                         </Box>
                     </Grid>
                     <Grid item xs = {12} md = {7}>
-                        <Typography color = "primary.contrastText" variant = "h1" textAlign = "center" pb = {2} >
+                        <Typography color = "primary.contrastText" variant = "h2" textAlign = "center" pb = {4} >
                             Thomas Mayer Garcez
                         </Typography>
-                        <Typography color = "primary.contrastText" variant = "h4" textAlign = "center">
+                        <Typography color = "primary.contrastText" variant = "h4" textAlign = "center" pb = {4}>
                             &lt;/Software Developer&gt;
                         </Typography>
-                        <Grid container display = "flex" justifyContent = "center" spacing = {3} pt={3}>
+                        <Grid container display = "flex" justifyContent = "center" spacing = {10} pt={3}>
                             <Grid item xs = {12} md = {1} display = "flex" justifyContent = "center">
                                 <StyledButton onClick = {() => console.log("GitHub")}>
-                                    <GitHubIcon sx = {{ fontSize: 50 }} />
+                                    <GitHubIcon sx = {{ fontSize: 40 }} />
                                 </StyledButton>
                             </Grid>
                             <Grid item xs = {12} md = {1} display = "flex"justifyContent = "center">
                                 <StyledButton onClick = {() => console.log("LinkedIn")}>
-                                    <LinkedInIcon sx = {{ fontSize: 50 }} />
+                                    <LinkedInIcon sx = {{ fontSize: 40 }} />
                                 </StyledButton>
                             </Grid>
                             <Grid item xs = {12} md = {1} display = "flex" justifyContent = "center">
                                 <StyledButton onClick={() => console.log("Email")}>
-                                    <MailOutlineIcon sx={{ fontSize: 50 }} />
+                                    <MailOutlineIcon sx={{ fontSize: 40 }} />
                                 </StyledButton>
                             </Grid>
                             <Grid item xs = {12} md = {1} display = "flex" justifyContent = "center">
                                 <StyledButton onClick = {() => console.log("WhatsApp")}>
-                                    <WhatsAppIcon sx = {{ fontSize: 50 }} />
+                                    <WhatsAppIcon sx = {{ fontSize: 40 }} />
                                 </StyledButton>
                             </Grid>
                         </Grid>
