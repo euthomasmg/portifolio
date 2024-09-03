@@ -49,23 +49,23 @@ const Hero = () => {
                             &lt;/Software Developer&gt;
                         </Typography>
                         <Grid container display = "flex" justifyContent = "center" spacing = {10} pt={3}>
-                            <Grid item xs = {12} md = {1} display = "flex" justifyContent = "center">
-                                <StyledButton onClick = {() => console.log("GitHub")}>
-                                    <GitHubIcon sx = {{ fontSize: 40 }} />
-                                </StyledButton>
+                            <Grid item xs={12} md={1} display="flex" justifyContent="center">
+                                <StyledButton onClick={() => window.open("https://github.com/thomas488", "_blank")}>
+                                    <GitHubIcon sx={{ fontSize: 40 }} />
+                                 </StyledButton>
                             </Grid>
                             <Grid item xs = {12} md = {1} display = "flex"justifyContent = "center">
-                                <StyledButton onClick = {() => console.log("LinkedIn")}>
+                                <StyledButton onClick={() => window.open("https://www.linkedin.com/in/thomasmayer03/", "_blank")}>
                                     <LinkedInIcon sx = {{ fontSize: 40 }} />
                                 </StyledButton>
                             </Grid>
                             <Grid item xs = {12} md = {1} display = "flex" justifyContent = "center">
-                                <StyledButton onClick={() => console.log("Email")}>
+                                <StyledButton onClick={() => window.open("mailto:thomas2003.mayer@gmail.com")}>
                                     <MailOutlineIcon sx={{ fontSize: 40 }} />
                                 </StyledButton>
                             </Grid>
                             <Grid item xs = {12} md = {1} display = "flex" justifyContent = "center">
-                                <StyledButton onClick = {() => console.log("WhatsApp")}>
+                                <StyledButton onClick={() => window.open("https://api.whatsapp.com/send?phone=5551992927159&text=Ol%C3%A1%2C%20Thomas%21", "_blank")}>
                                     <WhatsAppIcon sx = {{ fontSize: 40 }} />
                                 </StyledButton>
                             </Grid>
